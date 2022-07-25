@@ -234,18 +234,18 @@ main .first_container {
 }
 main .first_container .logo_box {
   height: 20.5vw;
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 80%;
   margin: 2px auto;
   position: relative;
   left: 0%;
-  /* animation-name: example;
+   animation-name: example;
   animation-duration: 6s;
   
   animation-iteration-count: 3;
-  animation-timing-function: linear;  */
+  animation-timing-function: linear;  
    /* animation-direction: alternate; */
-   /* animation-iteration-count: infinite; */
+   animation-iteration-count: infinite;
 
 }
 main .first_container .logo_box img{
