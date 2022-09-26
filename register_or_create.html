@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .outermost_container {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0),
+            rgba(95, 97, 217, 0.3)
+          ),
+          url("./images/background_img2.jpeg");
+        /* background-repeat: no-repeat; */
+        background-size: contain;
+        position: absolute;
+      }
+
+      .form_box {
+        max-width: 400px;
+
+        position: relative;
+        margin: 6% auto;
+        background-color: white;
+        width: 69%;
+        height: 370px;
+
+        padding: 5px;
+        transition: height 0.5s;
+        overflow: hidden;
+      }
+      .button_box {
+        max-width: 220px;
+        margin: 30px auto;
+        position: relative;
+        border-radius: 10px;
+        background-color: transparent;
+        height: 40px;
+        width: 90%;
+        overflow: hidden;
+      }
+      .toggle_btn {
+        padding: 10px 15px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+        width: 45%;
+        text-align: center;
+        line-height: 10px;
+      }
+      #login_btn {
+        float: left;
+      }
+      #create_account_btn {
+        float: right;
+      }
+      #style_background_btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100px;
+        /* background-color: linear-gradient(rgb(0,0,0),rgb(17, 19, 107)); */
+        background: linear-gradient(rgb(255, 252, 252), rgb(24, 27, 173, 0.5));
+        /* background-color: red; */
+        border-radius: 20px;
+        transition: 0.5s;
+      }
+
+      .input-group {
+        position: absolute;
+        width: 90%;
+        top: 120px;
+        transition: 0.5s;
+        /* background-color: violet; */
+        /* overflow: hidden; */
+        height: 210px;
+      }
+      .input_field {
+        width: 95%;
+        padding: 10px 0px;
+        margin: 5px 5px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+
+        /* border-bottom: 1px solid blue; */
+        outline: none;
+        background: transparent;
+        min-width: 270px;
+      }
+      .submit_btn {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        /* background: yellowgreen; */
+        background: linear-gradient(rgb(255, 252, 252), rgb(24, 27, 173, 0.5));
+        border: 0;
+        outline: none;
+        border-radius: 20px;
+        text-align: center;
+        margin: 5px auto;
+
+        /*! position: relative; */
+        /*! bottom: 0px; */
+      }
+
+      .form_container {
+        /* background-color: brown; */
+      }
+      .check_box {
+        margin: 30px 10px 30px 0px;
+      }
+      span {
+        color: #777;
+        font-size: 15px;
+      }
+
+      #login {
+        left: 30px;
+      }
+      #register {
+        left: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- *******header -->
+
+    <header>
+      <div class="navigation_container">
+        <nav class="upper_navigation">
+          <div class="logo amazon_logo">
+            <a href="index.html">
+              <img src="./images for site/amazon_logo.jpeg" alt="logo"
+            /></a>
+          </div>
+          <div class="address">
+            <div class="logo address_logo">
+              <img src="./images for site/address_logo.jpeg" alt="logo" />
+            </div>
+            <div class="text">
+              <div class="text1">Hello</div>
+              <div class="text2">select your address</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              min-width: 52%;
+              padding: 0px 5px;
+              justify-content: center;
+            "
+          >
+            <div class="type_filter">
+              <select name="filter_by_type" id="filter_by_type_id">
+                <option value="">ALL</option>
+                <option value="mobile">mobile</option>
+                <option value="fridge">fridge</option>
+                <option value="ac">ac</option>
+                <option value="watch">watch</option>
+              </select>
+            </div>
+            <div class="search_area">
+              <input
+                type="text"
+                name="search_items"
+                id="search_items_id"
+                placeholder="search your items here"
+              />
+            </div>
+            <div class="search">
+              <img src="./images for site/search logo.png" alt="logo" />
+            </div>
+          </div>
+
+          <div class="sign_in_text">
+            <div class="text1">Hello</div>
+            <div class="text2">Accounts and lists</div>
+          </div>
+          <div class="cart_container">
+            <img src="./images for site/cart_logo.png" alt="cart img" />
+          </div>
+          <div class="sign_in_box"></div>
+        </nav>
+        <nav class="lower_navigation">
+          <!-- Lorem ipsum dolor -->
+          <div class="lists_container">
+            <ul>
+              <li><a href="#"> ALL</a></li>
+              <li><a href="#">Amazon Pay</a></li>
+              <li><a href="#">Gifts cards</a></li>
+              <li><a href="#">Buy Again</a></li>
+              <li><a href="#">Gift Ideas</a></li>
+              <li><a href="#">Health,Housold and Personal Care </a></li>
+              <li><a href="#">Home Improvement </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ******* header ***************** -->
+    <div class="outermost_container">
+      <div class="form_box" id="form_box_id">
+        <div class="button_box">
+          <div id="style_background_btn"></div>
+          <button
+            type="button"
+            class="toggle_btn"
+            onclick="login()"
+            id="login_btn"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            class="toggle_btn"
+            onclick="register()"
+            id="create_account_btn"
+          >
+            Create Account
+          </button>
+        </div>
+
+        <div class="form_container">
+          <form action="" class="input-group" id="login">
+            <input
+              type="text"
+              name="user_id_name"
+              id="user_id_id"
+              class="input_field"
+              placeholder="Enter your user Id"
+              required
+            />
+
+            <input
+              type="text"
+              name="password_name"
+              id="password_id"
+              class="input_field"
+              placeholder="Enter your password"
+              required
+            />
+
+            <input
+              type="checkbox"
+              name="remember_me_name"
+              id="remember_me_id"
+              class="check_box"
+            />
+            <span>Remember Me</span>
+
+            <button type="submit" class="submit_btn">Log-in</button>
+          </form>
+
+          <!-- ******************************************** -->
+          <form action="" class="input-group" id="register">
+            <input
+              type="text"
+              name="user_id_name"
+              id="user_id_id"
+              class="input_field"
+              placeholder="Enter your user Id"
+              required
+            />
+
+            <input
+              type="text"
+              name="password_name"
+              id="password_id"
+              class="input_field"
+              placeholder="Enter your password"
+              required
+            />
+
+            <input
+              type="email"
+              name="email_name"
+              id="email_id"
+              class="input_field"
+              placeholder="Enter your Email Id"
+              required
+            />
+
+            <input
+              type="tel"
+              name="phone_name"
+              id="phone_id"
+              class="input_field"
+              placeholder="Enter 10 dig. phone no. "
+            />
+
+            <input
+              type="checkbox"
+              name="remember_me_name"
+              id="remember_me_id"
+              class="check_box"
+            />
+            <span>I Agree to Terms and Conditions </span>
+
+            <button type="submit" class="submit_btn">register</button>
+          </form>
+          <!-- ************************************* -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let login_button = document.getElementById("login");
+      let create_button = document.getElementById("register");
+      let background_btn = document.getElementById("style_background_btn");
+
+      function register() {
+        login_button.style.left = "-450px";
+        create_button.style.left = "30px";
+        background_btn.style.left = "120px";
+        document.getElementById("form_box_id").style.height = "450px";
+      }
+
+      function login() {
+        login_button.style.left = "30px";
+        create_button.style.left = "450px";
+        background_btn.style.left = "0px";
+        document.getElementById("form_box_id").style.height = "370px";
+      }
+    </script>
+  </body>
+</html>

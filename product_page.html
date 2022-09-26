@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        /* background-color: wheat; */
+        /* background: linear-gradient(rgb(96, 118, 231, 1), rgb(235, 237, 237, 1)); */
+        
+      }
+      body{
+        /* background: linear-gradient(rgb(96, 118, 231, 1), rgb(235, 237, 237, 1)); */
+
+      }
+      .parent_container {
+        height: 500px;
+        width: 90%;
+        /* background-color: white; */
+        display: flex;
+        margin: 50px auto;
+        min-width: 300px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+      }
+      .parent_container .image_container {
+        height: 450px;
+        width: 45%;
+        /* background-color: red; */
+        margin: 2px;
+        min-width: 200px;
+        display: flex;
+
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        /*! min-width: 300px; */
+        flex-wrap: wrap;
+        border: 0.5px solid gray;
+        background-color: rgb(235, 237, 237, 1);
+      }
+      .parent_container .content_description {
+        height: 450px;
+        width: 45%;
+        /* background-color: blue; */
+        margin: 2px;
+        min-width: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /*! align-items: center; */
+        align-content: center;
+      }
+
+      .parent_container .image_container .smaller_images {
+        width: 200px;
+        height: 90%;
+        /* background-color: brown; */
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: scroll;
+      }
+      .parent_container .image_container .main_img {
+        width: 300px;
+        height: 90%;
+        /* background-color: aqua; */
+        margin: 2px;
+      }
+      .parent_container .image_container .main_img img {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      .parent_container .image_container .smaller_images .nested_images {
+        height: 150px;
+        width: 150px;
+        margin: 5px;
+        /* background-color: white; */
+      }
+      .parent_container .image_container .smaller_images .nested_images img {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        opacity: 0.7;
+      }
+      .parent_container
+        .image_container
+        .smaller_images
+        .nested_images
+        img:hover {
+        opacity: 1;
+      }
+      .parent_container .content_description .style {
+        /* background-color: white; */
+        height: 45%;
+        width: 95%;
+        margin: 2px;
+        display: flex;
+        align-items: center;
+        background-color:  rgb(235, 237, 237, 1);
+        padding: 2px;
+      }
+
+      .parent_container .content_description .style {
+        /* background-color: white; */
+        height: 45%;
+        width: 95%;
+        margin: 2px;
+        display: flex;
+        align-items: center;
+      }
+
+      @media screen and (max-width: 1266px) {
+        .parent_container .image_container .main_img {
+          height: 70%;
+          order: 1;
+        }
+        .parent_container .image_container .smaller_images {
+          width: 1000px;
+          height: 120px;
+          order: 2;
+          flex-direction: column;
+        }
+      }
+
+      .content_description .style .line_through {
+        display: inline-block;
+        text-decoration: line-through;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .parent_container {
+          height: 750px;
+        }
+        .parent_container .image_container {
+          width: 90%;
+        }
+        .parent_container .content_description {
+          height: 200px;
+          width: 90%;
+        }
+        .parent_container .image_container .smaller_images {
+          width: 200px;
+          height: 90%;
+          order: 1;
+          flex-direction: row;
+        }
+        .parent_container .image_container .main_img {
+          order: 2;
+        }
+        .parent_container .image_container {
+          justify-content: space-evenly;
+        }
+      }
+      @media screen and (max-width: 640px) {
+        .parent_container .image_container .main_img {
+          order: 1;
+        }
+        .parent_container .image_container .smaller_images {
+          width: 10000px;
+          height: 120px;
+          order: 2;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ****************header ********************* -->
+    <header>
+      <div class="navigation_container">
+        <nav class="upper_navigation">
+          <div class="logo amazon_logo">
+            <a href="index.html">
+              <img src="./images for site/amazon_logo.jpeg" alt="logo"
+            /></a>
+          </div>
+          <div class="address">
+            <div class="logo address_logo">
+              <img src="./images for site/address_logo.jpeg" alt="logo" />
+            </div>
+            <div class="text">
+              <div class="text1">Hello</div>
+              <div class="text2">select your address</div>
+            </div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              min-width: 52%;
+              padding: 0px 5px;
+              justify-content: center;
+            "
+          >
+            <div class="type_filter">
+              <select name="filter_by_type" id="filter_by_type_id">
+                <option value="">ALL</option>
+                <option value="mobile">mobile</option>
+                <option value="fridge">fridge</option>
+                <option value="ac">ac</option>
+                <option value="watch">watch</option>
+              </select>
+            </div>
+            <div class="search_area">
+              <input
+                type="text"
+                name="search_items"
+                id="search_items_id"
+                placeholder="search your items here"
+              />
+            </div>
+            <div class="search">
+              <img src="./images for site/search logo.png" alt="logo" />
+            </div>
+          </div>
+
+          <div class="sign_in_text">
+            <div class="text1">Hello</div>
+            <div class="text2">Accounts and lists</div>
+          </div>
+          <div class="cart_container">
+            <img src="./images for site/cart_logo.png" alt="cart img" />
+          </div>
+          <div class="sign_in_box"></div>
+        </nav>
+        <nav class="lower_navigation">
+          <!-- Lorem ipsum dolor -->
+          <div class="lists_container">
+            <ul>
+              <li><a href="#"> ALL</a></li>
+              <li><a href="#">Amazon Pay</a></li>
+              <li><a href="#">Gifts cards</a></li>
+              <li><a href="#">Buy Again</a></li>
+              <li><a href="#">Gift Ideas</a></li>
+              <li><a href="#">Health,Housold and Personal Care </a></li>
+              <li><a href="#">Home Improvement </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ******************header -->
+    <div class="parent_container">
+      <!-- *****image container -->
+
+      <div class="image_container">
+        <!-- *** samller_images ****-->
+
+        <div class="smaller_images">
+          <div class="nested_images">
+            <img
+              src="./images for site/projduct img 2.jpeg"
+              alt=""
+              onclick="replaceimg(this)"
+            />
+          </div>
+          <div class="nested_images">
+            <img
+              src="./images for site/projduct img 3.jpeg"
+              alt=""
+              onclick="replaceimg(this)"
+            />
+          </div>
+          <div class="nested_images">
+            <img
+              src="./images for site/projduct img 4.jpeg"
+              alt=""
+              onclick="replaceimg(this)"
+            />
+          </div>
+          <div class="nested_images">
+            <img
+              src="./images for site/projduct img 5.jpeg"
+              alt=""
+              onclick="replaceimg(this)"
+            />
+          </div>
+        </div>
+
+        <!-- *** samller_images ****-->
+
+        <!-- *** main_img ****-->
+
+        <div class="main_img">
+          <img
+            src="./images for site/projduct img 1.jpeg"
+            alt=""
+            id="main_img_id"
+          />
+        </div>
+
+        <!-- *** main_img ****-->
+      </div>
+
+      <!-- *****image container -->
+
+      <!-- ************* content_description ************ -->
+
+      <div class="content_description">
+        <div class="style">
+          <h3>
+            product_name Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Praesentium excepturi laudantium deleniti sapiente, molestiae
+            nostrum.
+          </h3>
+        </div>
+        <div class="style">
+          price : 375rs
+
+          <div class="line_through">500rs</div>
+        </div>
+
+        <!-- ************* content_description ************ -->
+      </div>
+    </div>
+
+    <script>
+      function replaceimg(small_img) {
+        let fullimg = document.getElementById("main_img_id");
+        let temp = fullimg.src;
+
+        fullimg.src = small_img.src;
+        small_img.src = temp;
+      }
+
+      let i = 0;
+      let vector_img = document.getElementsByClassName("nested_images");
+
+      setInterval(function () {
+        // console.log(i);
+        // let temp=vector_img[i].getElementsByTagName("img");
+
+        // vector_img[i].children[0].src=document.getElementById("main_img_id").children[0].src;
+        // document.getElementById("main_img_id").children[0].src=temp.src;
+
+        // vector_img[i].getElementsByTagName("img").src=document.getElementById("main_img_id").src;
+        // document.getElementById("main_img_id").src=temp.src;
+
+        let temp = vector_img[i].children[0].src;
+        vector_img[i].children[0].src =
+          document.getElementById("main_img_id").src;
+        document.getElementById("main_img_id").src = temp;
+
+        i++;
+        i = i % vector_img.length;
+        // console.log("hello world");
+      }, 5000);
+    </script>
+  </body>
+</html>
