@@ -271,20 +271,9 @@ main .first_container .content_box {
   margin: 25px 10px;
   overflow: hidden;
 }
-main .first_container .content_box .child_box {
-  background-color: white;
-  width: 10%;
 
-  padding: 10px;
-  min-height: 180px;
+/* ********** */
 
-
-  /* background-color: white; */
-  margin: 46px 2px;
-min-width: 246px;
-height: 68%;
-  
-}
 
 /* **************divide int two and four********** */
 
@@ -360,7 +349,7 @@ main .second_container {
   overflow: hidden;
 }
 
-main .second_container .child_box {
+main  .child_box {
   background-color: white;
 
 
@@ -548,3 +537,6 @@ height: 68%; */
 margin: 46px 2px;
 min-width: 246px;
 height: 68%; */
+
+
+/* sdfasdfasdf */
