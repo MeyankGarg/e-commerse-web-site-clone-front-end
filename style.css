@@ -1,1271 +1,548 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>home</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="navigation_container">
-        <nav class="upper_navigation">
-          <div class="logo amazon_logo">
-            <a href="index.html">
-              <img src="./images for site/amazon_logo.jpeg" alt="logo"
-            /></a>
-          </div>
-          <div class="address">
-            <div class="logo address_logo">
-              <img src="./images for site/address_logo.jpeg" alt="logo" />
-            </div>
-            <div class="text">
-              <div class="text1">Hello</div>
-              <div class="text2">select your address</div>
-            </div>
-          </div>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
 
-          <div
-            style="
-              display: flex;
-              min-width: 52%;
-              padding: 0px 5px;
-              justify-content: center;
-            "
-          >
-            <div class="type_filter">
-              <select name="filter_by_type" id="filter_by_type_id">
-                <option value="">ALL</option>
-                <option value="mobile">mobile</option>
-                <option value="fridge">fridge</option>
-                <option value="ac">ac</option>
-                <option value="watch">watch</option>
-              </select>
-            </div>
-            <div class="search_area">
-              <input
-                type="text"
-                name="search_items"
-                id="search_items_id"
-                placeholder="search your items here"
-              />
-            </div>
-            <div class="search">
-              <img src="./images for site/search logo.png" alt="logo" />
-            </div>
-          </div>
+.upper_navigation {
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
 
-          <div class="sign_in_text">
-            <div class="text1">Hello</div>
-            <div class="text2">Accounts and lists</div>
-          </div>
-          <div class="cart_container">
-            <img src="./images for site/cart_logo.png" alt="cart img" />
-          </div>
-          <div class="sign_in_box"></div>
-        </nav>
-        <nav class="lower_navigation">
-          <!-- Lorem ipsum dolor -->
-          <div class="lists_container">
-            <ul>
-              <li><a href="#"> ALL</a></li>
-              <li><a href="#">Amazon Pay</a></li>
-              <li><a href="#">Gifts cards</a></li>
-              <li><a href="#">Buy Again</a></li>
-              <li><a href="#">Gift Ideas</a></li>
-              <li><a href="#">Health,Housold and Personal Care </a></li>
-              <li><a href="#">Home Improvement </a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+  width: 100%;
+  height: 70px;
+  font-size: 17px;
+  overflow: auto;
+}
+/* .upper_navigation .logo img {
+  margin: 10px;
 
-    <main>
-      <!-- ***************************** -->
-      <div class="first_container">
-        <div class="logo_box">
-          <img
-            src="./images for site/happy_customer2.png"
-            alt="their is an image"
-            style="float: right"
-          />
-          <!-- <img src="happy_customer1.png" alt="their is an image" style="float: left ;"> -->
-          <img
-            src="./images for site/client-1.png"
-            alt="their is an image"
-            style="float: left"
-          />
-        </div>
+  } */
+/* .logo img {
+  height: 40px;
+  } */
 
-        <div class="content_box">
-          <!-- divide_into_four contains a title container and content child
-    content child contains four chils: first child..... and caption link-->
+.upper_navigation .amazon_logo {
+  width: 150px;
+  height: 65px;
+  margin: 2px 3px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.upper_navigation .amazon_logo img {
+  height: 60px;
+  display: block;
+  margin: auto;
+  /* border: 1px solid white; */
+}
+.upper_navigation .amazon_logo:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
 
-          <div class="child_box divide_into_four">
-            <div class="title_container">Keep shopping for:</div>
-            <div class="content_child">
-              <div class="first_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package.png"
-                    alt="their is an img "
-                /></a>
-              </div>
-              <div class="second_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package2.jpeg"
-                    alt="their is an img"
-                /></a>
-              </div>
-              <div class="third_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package2.jpeg"
-                    alt="their is an img"
-                /></a>
-              </div>
-              <div class="fourth_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package.png"
-                    alt="their is an img "
-                /></a>
-              </div>
-            </div>
-            <a href="#">Hello Content Here</a>
-          </div>
-          <div class="child_box divide_into_four">
-            <div class="title_container">Pick Up Where You Left:</div>
-            <div class="content_child">
-              <div class="first_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package.png"
-                    alt="their is an img "
-                /></a>
-              </div>
-              <div class="second_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package2.jpeg"
-                    alt="their is an img"
-                /></a>
-              </div>
-              <div class="third_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package2.jpeg"
-                    alt="their is an img"
-                /></a>
-              </div>
-              <div class="fourth_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package.png"
-                    alt="their is an img "
-                /></a>
-              </div>
-            </div>
-            <a href="#">Hello Content Here</a>
-          </div>
-          <div class="child_box divide_into_four">
-            <div class="title_container">Amazon Pay | Book your tickets</div>
-            <div class="content_child">
-              <div class="first_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package.png"
-                    alt="their is an img "
-                /></a>
-              </div>
-              <div class="second_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package2.jpeg"
-                    alt="their is an img"
-                /></a>
-              </div>
-              <div class="third_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package2.jpeg"
-                    alt="their is an img"
-                /></a>
-              </div>
-              <div class="fourth_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/dilevery_package.png"
-                    alt="their is an img "
-                /></a>
-              </div>
-            </div>
-            <a href="#">Hello Content Here</a>
-          </div>
-          <div class="child_box divide_into_two">
-            <div class="title_container">Start Selling on Amazon</div>
-            <div class="content_child">
-              <div class="first_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/package1.webp"
-                    alt="their is an image"
-                /></a>
-              </div>
-              <div class="second_child">
-                <a href="#"
-                  ><img
-                    src="./images for site/package2.webp"
-                    alt="their is an image"
-                /></a>
-              </div>
-            </div>
+/* apply onclick using javascript on hovering address logo to directed to maps */
+.upper_navigation .address {
+  display: flex;
+  align-items: center;
+  margin: auto 14px auto 4px;
+  border: 1px solid black;
+  height: 62px;
+  border-radius: 4px;
+}
+.upper_navigation .address img {
+  height: 25px;
+}
+.upper_navigation .address_logo {
+  height: 25px;
+  /* border: 1px solid wheat; */
+}
+.upper_navigation .address .text {
+  margin: 5px;
 
-            <a href="#">Hello Content Here</a>
-          </div>
-        </div>
-      </div>
+  height: 95%;
 
-      <!-- *************************** -->
+  min-width: 130px;
+  padding: 12px 0px 0px 0px;
+  font-size: 14px;
+}
 
-      <div class="second_container">
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+.upper_navigation .address:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+.upper_navigation .type_filter select {
+  height: 45px;
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-      </div>
+  text-align: center;
+  font-size: 17px;
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  width: 20vw;
+  max-width: 100px;
+  margin-top: 10px;
+}
+.upper_navigation .type_filter select:hover {
+  cursor: pointer;
+}
 
-      <!-- **************************** -->
-      <div class="third_container">
-        <div class="title_container">Here is the title</div>
+.upper_navigation .search_area input {
+  width: 45vw;
+  height: 45px;
+  font-size: 17px;
+  border: none;
+  margin-top: 10px;
 
-        <div class="scroll_container">
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-        </div>
-      </div>
-      <!-- ******************** -->
-      <!-- *************************** -->
+  /* border-radius: 4px; */
+}
+.upper_navigation .search img {
+  height: 46px;
 
-      <div class="second_container">
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+  width: 16vw;
+  max-width: 50px;
+  margin: 10px 17px 6px 0px;
+  border-radius: 0px 4px 4px 0px;
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+  border: none;
+}
+.upper_navigation .search img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-      </div>
+/* apply onclick functio */
 
-      <!-- **************************** -->
-     <!-- **************************** -->
-     
-      <!-- ******************** -->
+.upper_navigation .sign_in_text {
+  border: 1px solid black;
+  height: 48px;
+  margin: 2px;
+  padding: 6px;
+  min-width: 140px;
+  font-size: 14px;
+}
+.upper_navigation .sign_in_text:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.upper_navigation .cart_container {
+  height: 40px;
+  border: 1px solid black;
+  min-width: 50px;
+  display: block;
+  margin: auto;
+  border-radius: 3px;
+}
 
-      <!-- *************************** -->
+.upper_navigation .cart_container img {
+  height: 38px;
+}
+.upper_navigation .cart_container:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+.upper_navigation .sign_in_box {
+  display: none;
+  background-color: blueviolet;
+  position: absolute;
 
-      <div class="second_container">
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+  clip-path: polygon(0 100%, 100% 100%, 100% 5%, 68% 5%, 65% 0, 59% 5%, 0 5%);
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+  height: 300px;
+  width: 300px;
+  top: 59px;
+  right: 103px;
+  z-index: 2;
+}
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-      </div>
-      <!-- ******************** -->
-      <!-- **************************** -->
-      <div class="third_container">
-        <div class="title_container">Here is the title</div>
+.lower_navigation {
+  background-color: rgb(38, 47, 61);
+  color: white;
+  height: 40px;
 
-        <div class="scroll_container">
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-          <div class="child_container">
-            <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-          </div>
-        </div>
-      </div>
-      <!-- ******************** -->
+  overflow: hidden;
+}
+.lower_navigation ul {
+  list-style: none;
+  margin: 0px;
+  padding: 5px;
+}
+.lower_navigation ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 6px 4px;
+}
+.lower_navigation ul li a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgb(38, 47, 61);
+  /* margin: 1px 5px; */
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 17px;
+}
+.lower_navigation ul li a:hover {
+  border: 1px solid white;
+}
 
-      <!-- *************************** -->
+.lower_navigation .lists_container {
+  height: 100%;
+  /* padding: 5px; */
+}
 
-      <div class="second_container">
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+main {
+  /* height: 200px; */
+  background-color: rgb(235, 237, 237);
+}
+@keyframes example {
+  /* 0%{
+    left: 0%;
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
+  }
+  25%{
+    left: 100%;
 
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-        <div class="child_box divide_into_four">
-          <div class="title_container">Amazon Pay | Book your tickets</div>
-          <div class="content_child">
-            <div class="first_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-            <div class="second_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="third_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package2.jpeg"
-                  alt="their is an img"
-              /></a>
-            </div>
-            <div class="fourth_child">
-              <a href="#"
-                ><img
-                  src="./images for site/dilevery_package.png"
-                  alt="their is an img "
-              /></a>
-            </div>
-          </div>
-          <a href="#">Hello Content Here</a>
-        </div>
-      </div>
+  }
+  50%{
+    left: 0%;
 
-      <!-- **************************** -->
-    <!-- **************************** -->
-    <div class="third_container">
-      <div class="title_container">Here is the title</div>
-
-      <div class="scroll_container">
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-        <div class="child_container">
-          <a href="#"><img src="./images for site/package3.webp" alt="" /></a>
-        </div>
-      </div>
-    </div>
-    <!-- ******************** -->
-      <!-- ******************** -->
-
-      <div class="fourth_container">
-        <div class="title_container">Hello title Here</div>
-
-        <div class="scroll_container">
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="./images for site/dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-
-          <div class="child_container">
-            <div class="img_container">
-              <a href="#"
-                ><img src="./images for site/package1.webp" alt="their is an image"
-              /></a>
-            </div>
-            <div class="description_container">
-              <a href="#">
-                Product name
-                <br />
-                Product rating
-                <br />
-                Product price
-              </a>
-            </div>
-            <div class="dilevery_status">
-              <a href="#"></a>
-
-              Dilevered by sunday
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- **************** -->
-      <div class="back_to_top">Back to Top</div>
-    </main>
-
-    <footer>copyright &copy; mayank garg</footer>
-  </body>
-</html>
+  }
+  75%{
+    left: -100%;
+  }
+  100%{
+    left: 0%;
 
 
+  } */
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+main .first_container {
+  height: 700px;
+  padding: 10px 0px;
+
+  background: linear-gradient(rgb(96, 118, 231, 1), rgb(235, 237, 237, 1));
+  overflow: hidden;
+}
+main .first_container .logo_box {
+  height: 20.5vw;
+
+  width: 80%;
+  margin: 2px auto;
+  position: relative;
+  left: 0%;
+
+  animation-name: example;
+
+  animation-duration: 6s;
+
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
+
+  /* animation-direction: alternate; */
+  animation-iteration-count: infinite;
+}
+main .first_container .logo_box img {
+  height: 100%;
+  /* float: right; */
+}
+main .first_container .content_box {
+  /* background-color: bisque; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 400px;
+  margin: 25px 10px;
+  overflow: hidden;
+}
+
+/* ********** */
+
+/* **************divide int two and four********** */
+
+.divide_into_four .title_container,
+.divide_into_two .title_container {
+  height: 15%;
+  width: 97%;
+  /* background-color: blueviolet; */
+  display: grid;
+  margin: auto;
+  align-items: center;
+}
+.divide_into_four .content_child,
+.divide_into_two .content_child {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
+  height: 70%;
+  width: 95%;
+}
+
+.divide_into_four .content_child .first_child,
+.divide_into_four .content_child .second_child,
+.divide_into_four .content_child .third_child,
+.divide_into_four .content_child .fourth_child {
+  height: 48%;
+  width: 48%;
+  /* background-color: brown; */
+  margin: 2px;
+  cursor: pointer;
+}
+.divide_into_two .content_child .first_child,
+.divide_into_two .content_child .second_child {
+  height: 48%;
+  width: 98%;
+  /* background-color: brown; */
+  margin: 2px;
+  cursor: pointer;
+}
+
+.divide_into_four .content_child .first_child a img,
+.divide_into_four .content_child .second_child a img,
+.divide_into_four .content_child .third_child a img,
+.divide_into_four .content_child .fourth_child a img,
+.divide_into_two .content_child .first_child a img,
+.divide_into_two .content_child .second_child a img {
+  height: 100%;
+  width: 100%;
+}
+
+.divide_into_four,
+.divide_into_two {
+  text-align: center;
+}
+.divide_into_four a,
+.divide_into_two a {
+  text-decoration: none;
+}
+.divide_into_four a:hover,
+.divide_into_two a:hover {
+  color: rgb(163, 52, 26);
+}
+
+/* divie into two and four ends */
+
+main .second_container {
+  width: 99%;
+  height: 400px;
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+/* 
+main  .child_box {
+  background-color: white;
+
+
+  padding: 10px;
+ 
+
+  width: 20%;
+margin: 39px 5px;
+min-height: 178px;
+min-width: 245px;
+height: 77%;
+} */
+
+main .child_box {
+  background-color: white;
+
+  padding: 10px;
+
+  /* background-color: white; */
+  width: 19%;
+  margin: 39px 5px;
+  min-height: 178px;
+  min-width: 230px;
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 267px;
+}
+main .third_container {
+  height: 300px;
+  background-color: white;
+}
+main .third_container .title_container {
+  height: 10%;
+  /* background-color: aqua; */
+
+  padding: 2px;
+  align-items: end;
+  display: grid;
+  font-size: 20px;
+  font-weight: 800;
+}
+main .third_container .scroll_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 260px;
+  width: 100%;
+}
+
+main .third_container .scroll_container .child_container {
+  height: 240px;
+  width: 250px;
+  /* background-color: wheat; */
+  margin: 0px 5px;
+  display: inline-block;
+}
+main .third_container .child_container a img {
+  height: 100%;
+  width: 100%;
+}
+
+main .fourth_container {
+  height: 450px;
+  /* background-color: aqua; */
+}
+main .fourth_container .title_container {
+  height: 16%;
+  background-color: white;
+  align-items: end;
+  display: grid;
+  font-size: 31px;
+  padding: 10px;
+  font-weight: bold;
+}
+main .fourth_container .scroll_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 375px;
+  width: 100%;
+  background-color: white;
+}
+
+main .fourth_container .scroll_container .child_container {
+  height: 350px;
+  /* background-color: darkgoldenrod; */
+  margin: 5px 10px;
+  width: 255px;
+}
+main .fourth_container .scroll_container .child_container .img_container {
+  height: 150px;
+  /* background-color: burlywood; */
+}
+main .fourth_container .scroll_container .child_container .img_container img {
+  height: 100%;
+  width: 100%;
+}
+main
+  .fourth_container
+  .scroll_container
+  .child_container
+  .description_container {
+  height: 125px;
+  /* background-color: aquamarine; */
+  padding: 5px;
+}
+main
+  .fourth_container
+  .scroll_container
+  .child_container
+  .description_container
+  a {
+  color: rgb(48, 111, 131);
+}
+main
+  .fourth_container
+  .scroll_container
+  .child_container
+  .description_container
+  a:hover {
+  color: rgb(226, 141, 52);
+}
+
+main .fourth_container .scroll_container .child_container .dilevery_status {
+  height: 75px;
+  /* background-color:blueviolet; */
+  padding: 5px;
+}
+
+/* use on click function to bring top */
+
+main .back_to_top {
+  height: 50px;
+  background-color: rgb(58, 71, 88);
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+main .back_to_top:hover {
+  background-color: rgb(70, 80, 95);
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  height: 100px;
+  /* position: sticky; */
+}
+
+@media screen and (max-width: 1260px) {
+  /* .upper_navigation .search_area input {
+
+    width: 55vw;
+    } */
+
+  .upper_navigation .address {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  .upper_navigation .cart_container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .upper_navigation {
+    /* background-color: black; */
+    height: 135px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upper_navigation .sign_in_text {
+    display: none;
+  }
+  .upper_navigation .search_area input {
+    width: 65vw;
+  }
+  /* .upper_navigation .search_area input {
+
+      width: 70vw;
+      } */
+}
+
+/* 
+margin: 46px 2px;
+min-height: 165px;
+min-width: 240px;
+height: 68%; */
+/* 
+margin: 46px 2px;
+min-width: 246px;
+height: 68%; */
+
+/* sdfasdfasdf */
