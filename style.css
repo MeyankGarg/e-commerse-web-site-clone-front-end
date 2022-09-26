@@ -280,7 +280,7 @@ main .first_container .content_box {
 .divide_into_two .content_child {
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
+  background-color: blue;
   height: 70%;
   width: 95%;
 }
