@@ -56,7 +56,7 @@
             </div>
           </div>
 
-          <div class="sign_in_text">
+          <div class="sign_in_text" id="redirect_to_signin_page">
             <div class="text1">Hello</div>
             <div class="text2">Accounts and lists</div>
           </div>
@@ -404,15 +404,11 @@
               ><img src="./images for site/dilevery_package.png" alt=""
             /></a>
           </div>
-          
         </div>
 
         <!-- ********************************* -->
 
-
         <div class="childbox">
-
-
           <div class="nested_child_title">hello world</div>
 
           <div class="nested_child">
@@ -435,11 +431,9 @@
               ><img src="./images for site/dilevery_package.png" alt=""
             /></a>
           </div>
-          
         </div>
 
         <!-- ********************************* -->
-
 
         <div class="childbox">
           <div class="nested_child_title">hello world</div>
@@ -491,13 +485,11 @@
             /></a>
           </div>
         </div>
-       
-        <!-- ********************************* -->
 
+        <!-- ********************************* -->
       </div>
 
       <!-- ******************************* non- scrollable container ******************************************-->
-
 
       <!-- **************** -->
       <div class="back_to_top">Back to Top</div>
@@ -507,5 +499,12 @@
     <footer>copyright &copy; mayank garg</footer>
 
     <!-- ******************************************************************************************************** -->
+
+    <script type="text/javascript">
+      document.getElementById("redirect_to_signin_page").onclick = function () {
+        location.href = "register_or_create.html";
+        console.log("1");
+      };
+    </script>
   </body>
 </html>
