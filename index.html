@@ -69,7 +69,7 @@
           <!-- Lorem ipsum dolor -->
           <div class="lists_container">
             <ul>
-              <li><a href="#"> ALL</a></li>
+              <li><a href="#" id="toogle_slidebar" value="hide" onclick="temp()"> ALL</a></li>
               <li><a href="#">Amazon Pay</a></li>
               <li><a href="#">Gifts cards</a></li>
               <li><a href="#">Buy Again</a></li>
@@ -83,6 +83,48 @@
     </header>
     <!-- ******************************************************************************************************** -->
     <main>
+      <!-- ************ slidebar ************ -->
+      <div id="background_layer_for_sidebar" onclick="temp()"></div>
+
+      <div class="slidebar" id="slidebar" value="hide" onclick="temp()">
+        <div class="hanburger_logo" id="hanburger_logo" >
+          <img src="./images for site/hanburger_icon.png" alt="" />
+        </div>
+
+        <div class="logo_box">
+          <a href="index.html">
+            <img src="./images for site/amazon_logo.jpeg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="address" id="slidebar_address">
+          <div class="logo address_logo">
+            <img src="./images for site/address_logo.jpeg" alt="logo" />
+          </div>
+
+          <div class="text">
+            <div class="text1">Hello</div>
+            <div class="text2">select your address</div>
+          </div>
+        </div>
+
+        <nav class="navigation_center">
+          <!-- Lorem ipsum dolor -->
+          <div class="lists_container">
+            <ul>
+              <li><a href="#"> ALL</a></li>
+              <li><a href="#">Amazon Pay</a></li>
+              <li><a href="#">Gifts cards</a></li>
+              <li><a href="#">Buy Again</a></li>
+              <li><a href="#">Gift Ideas</a></li>
+              <li><a href="#">Health and Housold</a></li>
+              <li><a href="#">Home Improvement </a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- ************ slidebar ************ -->
       <!-- <div class="sample"></div> -->
       <!-- ******************************* first container ****************************************************** -->
       <div class="first_container">
@@ -503,8 +545,74 @@
     <script type="text/javascript">
       document.getElementById("redirect_to_signin_page").onclick = function () {
         location.href = "register_or_create.html";
-        console.log("1");
+        // console.log("1");
       };
+    </script>
+
+    <script type="text/javascript">
+      document.getElementById("slidebar_address").onclick = function () {
+        location.href = "register_or_create.html";
+        // console.log("1");
+      };
+    </script>
+
+    <script>
+
+
+
+
+      let all_btn = document.getElementById("toogle_slidebar");
+      // let hanburger_btn = document.getElementById("hanburger_logo");
+      let hanburger_btn = document.getElementById("slidebar");
+
+      function temp(){
+
+        let a = all_btn.getAttribute("value");
+        let b = hanburger_btn.getAttribute("value");
+
+        if (a == "hide") {
+
+          // console.log("before");
+          // console.log(all_btn.getAttribute("value"));
+          // console.log(hanburger_btn.getAttribute("value"));
+
+
+          all_btn.setAttribute("value", "show");
+          hanburger_btn.setAttribute("value", "show");
+
+          document.getElementById("slidebar").style.display = "block";
+          document.getElementById(
+            "background_layer_for_sidebar"
+          ).style.display = "block";
+
+          // console.log("after");
+          // console.log(all_btn.getAttribute("value"));
+          // console.log(hanburger_btn.getAttribute("value"));
+        } else {
+
+          // console.log("before");
+          // console.log(all_btn.getAttribute("value"));
+          // console.log(hanburger_btn.getAttribute("value"));
+
+
+
+          all_btn.setAttribute("value", "hide");
+          hanburger_btn.setAttribute("value", "hide");
+
+          // console.log("after");
+          // console.log(all_btn.getAttribute("value"));
+          // console.log(hanburger_btn.getAttribute("value"));
+
+          document.getElementById("slidebar").style.display = "none";
+          document.getElementById(
+            "background_layer_for_sidebar"
+          ).style.display = "none";
+        }
+
+
+
+      };
+      
     </script>
   </body>
 </html>

@@ -6,6 +6,133 @@
   font-family: "Inter", sans-serif;
 }
 
+#slidebar {
+  height: 100vh;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  /*! justify-content: center; */
+
+  flex-direction: column;
+  /*! align-content: center; */
+  align-items: center;
+  top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+
+}
+#background_layer_for_sidebar{
+  position: fixed;
+  background: linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4));
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  /* right: 0%; */
+  display: none;
+}
+
+
+#slidebar .hanburger_logo {
+  align-self: end;
+  filter: invert(100%);
+  display: flex;
+justify-content: end;
+}
+#slidebar .hanburger_logo img {
+  height: 30px;
+  cursor: pointer;
+}
+#slidebar .logo_box {
+  height: 60px;
+  width: 98%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#slidebar .logo_box img {
+  height: 100%;
+  width: 136px;
+}
+#slidebar .logo_box:hover {
+  border: 1px solid white;
+}
+#slidebar .address {
+  display: flex;
+  align-items: center;
+  margin: 0px 2px 0px 2px;
+  border: 1px solid black;
+  height: 62px;
+  border-radius: 4px;
+  width: 98%;
+  background-color: black;
+  color: white;
+  justify-content: center;
+}
+#slidebar .address img {
+  height: 25px;
+}
+.address_logo {
+  height: 25px;
+  /* border: 1px solid wheat; */
+}
+#slidebar .address .text {
+  margin: 5px;
+
+  height: 95%;
+
+  min-width: 130px;
+  padding: 12px 0px 0px 0px;
+  font-size: 14px;
+}
+
+#slidebar .address:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+#slidebar .navigation_center {
+  /* background-color: wheat; */
+  width: 100%;
+}
+
+#slidebar .navigation_center ul {
+  list-style: none;
+  margin: 0px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#slidebar .navigation_center ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 6px 4px;
+}
+#slidebar .navigation_center ul li a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+
+  border-radius: 3px;
+  padding: 3px;
+  font-size: 17px;
+  margin: 0px 5px;
+  display: inline-block;
+  width: 190px;
+  text-align: center;
+}
+#slidebar .navigation_center ul li a:hover {
+  border: 1px solid white;
+}
+
 .upper_navigation {
   display: flex;
   background-color: black;
@@ -44,6 +171,7 @@
 }
 
 /* apply onclick using javascript on hovering address logo to directed to maps */
+
 .upper_navigation .address {
   display: flex;
   align-items: center;
@@ -57,7 +185,6 @@
 }
 .upper_navigation .address_logo {
   height: 25px;
-  /* border: 1px solid wheat; */
 }
 .upper_navigation .address .text {
   margin: 5px;
@@ -210,9 +337,6 @@ main {
   }
 }
 
-
-
-
 main .first_container {
   height: 700px;
   padding: 10px 0px;
@@ -261,7 +385,7 @@ main .first_container .content_box {
   align-items: center;
   flex-wrap: wrap;
 }
-main .first_container  .childbox {
+main .first_container .childbox {
   height: 97%;
   width: 18%;
   /* background-color: white; */
@@ -271,7 +395,7 @@ main .first_container  .childbox {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-main .first_container  .childbox .nested_child_title {
+main .first_container .childbox .nested_child_title {
   width: 90%;
   height: 20px;
   /* background-color: wheat; */
@@ -283,7 +407,7 @@ main .first_container .childbox .nested_child {
   width: 108px;
   margin: 2px;
 }
-main .first_container .childbox .nested_child img{
+main .first_container .childbox .nested_child img {
   height: 100%;
   width: 100%;
 }
@@ -304,20 +428,19 @@ main .scrolable_container {
 main .scrolable_container .nested_child {
   height: 165px;
   width: 160px;
-  
+
   margin: 1px;
 }
-main .scrolable_container .nested_child img{
+main .scrolable_container .nested_child img {
   height: 100%;
   width: 100%;
 }
-
 
 /* **************scrolable container */
 
 /* ************** non-scrolable container */
 
-main .non_scrollable_container{
+main .non_scrollable_container {
   height: 200px;
   width: 98%;
   /* background-color: brown; */
@@ -329,7 +452,7 @@ main .non_scrollable_container{
   overflow: hidden;
 }
 
-main .non_scrollable_container  .childbox {
+main .non_scrollable_container .childbox {
   height: 97%;
   width: 15%;
   /* background-color: blue; */
@@ -339,7 +462,7 @@ main .non_scrollable_container  .childbox {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-main .non_scrollable_container  .childbox .nested_child_title {
+main .non_scrollable_container .childbox .nested_child_title {
   width: 90%;
   height: 20px;
   /* background-color:blueviolet; */
@@ -351,17 +474,12 @@ main .non_scrollable_container .childbox .nested_child {
   width: 90px;
   margin: 9px 2px;
 }
-main .non_scrollable_container .childbox .nested_child img{
+main .non_scrollable_container .childbox .nested_child img {
   height: 100%;
   width: 100%;
 }
 
 /* ************** non-scrolable container */
-
-
-
-
-
 
 main .back_to_top {
   height: 50px;
@@ -408,10 +526,22 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .upper_navigation .sign_in_text {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
 
+  .upper_navigation .amazon_logo {
+    position: relative;
+    left: -25%;
+    top: 5%;
+  }
+
+  /* 
   .upper_navigation .sign_in_text {
     display: none;
-  }
+  } */
   .upper_navigation .search_area input {
     width: 65vw;
   }
@@ -426,7 +556,6 @@ footer {
     height: 140.8px;
     width: 180px;
     margin: 11px;
-    
   }
 }
 
